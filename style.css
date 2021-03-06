@@ -1,0 +1,62 @@
+h2{
+    color: brown;
+    /* font-size:  */
+    /* align-items: center; */
+    text-align: center;
+    font-size:3rem;
+}
+
+.icons{
+justify-content: center;
+margin: auto;
+padding: 40px;
+}
+.containertop{
+    justify-content: center;
+    text-align: center;
+}
+/* .top{
+text-align: center;
+/* } */
+/* .icon1{
+    size: 10px;
+    margin: 2px;
+    padding: 2px;
+} */ 
+.icons{
+    /* margin: 2px;
+    padding: 2px; */
+    display: flex;
+}
+
+.icon1{
+margin: 14px 2px;
+}
+.icon2{
+    margin: 14px 54px;
+}
+.icon3{
+    margin: 14px 54px ;
+
+}
+.icon4{
+    margin: 14px 5px ;
+}
+
+.shop1{
+    width: 47%;
+}
+.shop2{
+    width: 47%;
+}
+.toy1{
+    width:33%;
+}
+
+.toy2{
+    width:33%;
+}
+
+.toy3{
+    width:33%;
+}
