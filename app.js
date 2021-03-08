@@ -33,17 +33,16 @@
 // ---------------------
 // function total(n1:number,n2:number){
 //     {
-//         if(typeof n1 !=="number" || typeof n2 !=="number"){
-//             // throw new Error("incorrct error!!!!!")
+//         if(typeof n1 !=="number" || typeof n2 !=="number")
+//         {
+//             throw new Error("incorrct error!!!!!")
 //             // or
-//             console.log("Incorrect")
+//             // console.log("Incorrect")
 //         }
 //             return n1+n2
 //     }
 // }
-// var n1='5';
-// var n2=4;
-// var thetotal=(total(n1,n2));
+// var thetotal=(total(5,4));
 // console.log(thetotal);
 // ----------------------------
 // function total(n1:number,n2:number,show:boolean,marks:string){
@@ -136,3 +135,111 @@
 // }
 // console.log(combine(2,2))
 // console.log(combine('max','shary'))
+// Literal Type--
+// function combine(a:number=22,b:number=2,c:string="2"){
+// console.log(a+b+(c))
+// }
+// combine()
+// Function  Return Type--
+// function add(n1:number,n2:number){
+//     return n1+n2
+// }
+// function printresult(num:number):void{
+//     console.log("Result:"+num)
+// }
+// printresult(add(5,5))
+// Function as Types---
+// function add(n1:number,n2:number){
+//     return n1+n2
+// }
+// function printresult(num:number):void{
+//     console.log("Result:"+num)
+// }
+// printresult(add(5,5))
+// let combinevalue;
+// combinevalue=add
+// console.log(combinevalue(6,6))
+//Practice---- 
+// function add(a:number,b:number){
+//     if(typeof a !=="number" || typeof b!=="number"){
+//         return "error"
+//     }
+//     else{
+//         return a+b
+//     }
+// }
+// console.log(add(3,5))
+// -----
+// function result(a:number,b:number)
+// {
+//     console.log(`My Marks is `+(a+b))
+// }
+// result(2,2)
+// ------
+// ---
+//  enum day{
+//      mon=1,tue,wed
+//  }
+//  console.log(day.tue)
+//  enum days{
+//      mon="monday",
+//      tue="tuesday"
+// }
+// let checkday=days
+// console.log(checkday.mon)
+// function combine(a:number|string,b:number|string){
+//     if(typeof a==="number" && typeof b==="number"){
+//         return a+b
+//     }
+//     else(typeof a==="string" && typeof b==="string");{
+//         return a.toString()+b.toString()
+//     }
+// }
+// console.log(combine(3,'3'))
+// Arrow Function---
+// let say=(a:number,b:number)=>{
+// return a+b
+// }
+// console.log(say(2,2))
+// let add=(a:number,b:number=9)=> a+b;
+// console.log(add(2))
+// Spread Operator---
+// let hobbies=['sports','cooking']
+// let newlist=['singing']
+// newlist.push(...hobbies)
+// console.log(newlist)
+// function add(c,d,e){
+//     console.log(c+d+e)
+// };
+// var mylist=[2,2,2];
+// add.apply(null,mylist);
+// let person={
+//     name:"sumit",
+//     age:25
+// }
+// let copylist={...person}
+// console.log(copylist)
+// Rest Parameter--
+// function sum(...input){
+//     console.log(...input)
+// }
+// sum(2,2,2,2,3)
+// const add=(...numbers:number[])=>{
+//     return numbers.reduce((curresult,curvalue)=>{
+//         return curresult+curvalue
+//     },0);
+// };
+// const addnumber=add(2,3,4,5)
+// console.log(addnumber)
+// Object Destructing-----
+var detail = {
+    firstname: "sumit",
+    lastname: "sharma"
+};
+console.log(detail);
+var firstname = detail.firstname, lastname = detail.lastname;
+console.log(firstname);
+// Array Destructing----
+var list = ["sumit", "ankit", "sushant"];
+var top1 = list[0], top2 = list[1], top3 = list[2];
+console.log(top2);
