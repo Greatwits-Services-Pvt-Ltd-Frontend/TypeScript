@@ -336,17 +336,149 @@
 
 // Object Destructing-----
 
-let detail={
-    firstname:"sumit",
-    lastname:"sharma"
-}
-console.log(detail)
-let{firstname,lastname}=detail;
-console.log(firstname)
+// let detail={
+//     firstname:"sumit",
+//     lastname:"sharma"
+// }
+// console.log(detail)
+// let{firstname,lastname}=detail;
+// console.log(firstname)
 
 
 // Array Destructing----
 
-let list=["sumit","ankit","sushant"]
-let[top1,top2,top3]=list
-console.log(top2)
+// let list=["sumit","ankit","sushant"]
+// let[top1,top2,top3]=list
+// console.log(top2)
+
+
+
+// Class------------------------------------------------
+
+// class student{
+//     biodata(){
+//         console.log("This is a class")
+//     }
+// }
+// let a1=new student();
+// a1.biodata()
+
+// 
+
+// class marks{
+//     total=22;
+//    give(){
+//         console.log("Total Marks is :"+this.total)
+//     }
+// }
+// let given=new marks()
+// given.give()
+
+// 
+
+// class department{
+//     name:string;
+//     constructor(n){
+//         this.name=n
+//     }
+// }
+// let a2=new department("account")
+// console.log(a2)
+
+// 
+
+// class department{
+//     name:string;
+//     constructor(n:string){
+//         this.name=n
+//     }
+//     describe(){
+//         console.log("Deaprtment:"+ this.name)
+//     }
+// }
+// let a2=new department("account")
+// console.log(a2)
+
+// 
+
+// class channel{
+//     names:string="Hindi and English";
+//     constructor(){
+//         this.names
+//     }
+// }
+// let a3=new channel()
+// console.log(a3)
+
+// 
+
+// class department{
+//     name:string;
+//   public  employee:string[]=[]
+//     constructor(n:string){
+//         this.name=n
+//     }
+
+//     describe(this:department){
+//         console.log("Department:"+ this.name)
+//     }
+    
+//     addemployee(employee:string){
+//         this.employee.push(employee)
+//     }
+    
+//     totalemployee(){
+//         console.log(this.employee.length)
+//         console.log(this.employee)
+//     }
+// }
+// let say=new department('accounts')
+// say.name="new name"
+// say.describe();
+// say.addemployee('max')
+// say.addemployee("paul")
+// say.employee[2]="babaka"
+// say.totalemployee()
+
+// Inheritance----------------------------
+
+// class parents{
+//     name="hello Inheritance"
+//     setname(){
+//         this.name;
+//     }
+// }
+// class child extends parents{
+//     getname(){
+//         return this.name;
+//     }
+// }
+// let a1=new child()
+// a1.setname()
+// console.log(a1.getname())
+
+
+// Using Interface with Classes
+
+
+
+
+
+
+
+
+
+            
+            
+
+
+                                                    
+            
+            
+
+
+
+
+
+
+
