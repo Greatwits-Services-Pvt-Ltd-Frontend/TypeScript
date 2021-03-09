@@ -11,4 +11,4 @@ const r1=34;
 console.log(addd(q1,r1));
 const f1="sup";
 const g1=12;
-console.log(add(f1,g1))
+console.log(addd(f1,g1))
