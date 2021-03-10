@@ -13,79 +13,6 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var student = /** @class */ (function () {
-    function student() {
-    }
-    student.prototype.biodata = function () {
-        console.log("This is a class");
-    };
-    return student;
-}());
-var a11 = new student();
-a11.biodata();
-var marks = /** @class */ (function () {
-    function marks() {
-        this.total = 22;
-    }
-    marks.prototype.give = function () {
-        console.log("Total Marks is :" + this.total);
-    };
-    return marks;
-}());
-var given = new marks();
-given.give();
-var departments = /** @class */ (function () {
-    function departments(n) {
-        this.name = n;
-    }
-    return departments;
-}());
-var a22 = new departments("account");
-console.log(a22);
-var departmentss = /** @class */ (function () {
-    function departmentss(n) {
-        this.name = n;
-    }
-    departmentss.prototype.describe = function () {
-        console.log("Deaprtment:" + this.name);
-    };
-    return departmentss;
-}());
-var a2 = new departmentss("account");
-console.log(a2);
-var channel = /** @class */ (function () {
-    function channel() {
-        this.names = "Hindi and English";
-        this.names;
-    }
-    return channel;
-}());
-var a3 = new channel();
-console.log(a3);
-var department = /** @class */ (function () {
-    function department(n) {
-        this.employee = [];
-        this.name = n;
-    }
-    department.prototype.describe = function () {
-        console.log("Department:" + this.name);
-    };
-    department.prototype.addemployee = function (employee) {
-        this.employee.push(employee);
-    };
-    department.prototype.totalemployee = function () {
-        console.log(this.employee.length);
-        console.log(this.employee);
-    };
-    return department;
-}());
-var say = new department('accounts');
-say.name = "new name";
-say.describe();
-say.addemployee('max');
-say.addemployee("paul");
-say.employee[2] = "babaka";
-say.totalemployee();
 var parents = /** @class */ (function () {
     function parents() {
         this.name = "hello Inheritance";
@@ -108,3 +35,95 @@ var child = /** @class */ (function (_super) {
 var a1 = new child();
 a1.setname();
 console.log(a1.getname());
+var add = /** @class */ (function () {
+    function add() {
+    }
+    add.prototype.total = function (a, b) {
+        console.log(a + b);
+    };
+    return add;
+}());
+var get = new add();
+get.total(2, 2);
+var printit = /** @class */ (function () {
+    function printit() {
+    }
+    printit.prototype.get = function () {
+        console.log("My name is Sumit Sharma..");
+    };
+    return printit;
+}());
+var a2 = new printit();
+a2.get();
+var sasy = /** @class */ (function () {
+    function sasy() {
+    }
+    sasy.prototype.get = function () {
+        return this.name;
+    };
+    return sasy;
+}());
+var b = new sasy();
+b.get();
+var sy = function () {
+    return "my name is.......";
+};
+console.log(sy());
+var sa = {
+    name: "ankit",
+    id: 22,
+    status: true,
+    getname: function () { return "hello function"; }
+};
+console.log(sa.getname());
+function give(a) {
+    return a;
+}
+console.log(give(22));
+function y(data) {
+    return data;
+}
+console.log(y({ name: "sumit", id: 22 }));
+var department = /** @class */ (function () {
+    function department(n) {
+        this.name = n;
+    }
+    return department;
+}());
+var a = new department("accounts...");
+console.log(a);
+var say = "hello";
+console.log(say.length);
+var names = function (first, last) {
+    console.log(last);
+};
+names("sumit", "sharma");
+var stud = /** @class */ (function () {
+    function stud(n, age1, id1) {
+        this.name = n;
+        this.age = age1;
+        this.id = id1;
+    }
+    stud.prototype.biodata = function () {
+        console.log("My name is " + this.name + ",My age is " + this.age + ",My id is " + this.id + "...");
+    };
+    return stud;
+}());
+var ob = new stud('vinod', 22, 3442);
+ob.biodata();
+var student = /** @class */ (function () {
+    function student(name, age, id) {
+        this.name = name;
+        this.age = age;
+        this.id = id;
+        this.name;
+        this.age;
+        this.id;
+    }
+    student.prototype.biodata = function () {
+        console.log("My name is " + this.name + ",My age is " + this.age + ",My id is " + this.id + "...");
+    };
+    return student;
+}());
+var obj = new student('vinod', 22, 3442);
+obj.biodata();
