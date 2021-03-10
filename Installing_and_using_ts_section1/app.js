@@ -1,14 +1,10 @@
-var Department = /** @class */ (function () {
-    function Department(n) {
-        this.name = n;
+var Youtube = /** @class */ (function () {
+    // firstname:string;
+    // lastname:string;
+    function Youtube() {
     }
-    Department.prototype.describe = function () {
-        console.log('Department :  ' + this.name);
+    Youtube.prototype.getFirstname = function () {
+        console.log("firstname is : " + this.firstname);
     };
-    return Department;
+    return Youtube;
 }());
-var accounting = new Department('Acounting');
-console.log(accounting);
-// accounting.describe();
-// const acountingCopy = {name:"priyanka",describe: accounting.describe};
-// acountingCopy.describe();
