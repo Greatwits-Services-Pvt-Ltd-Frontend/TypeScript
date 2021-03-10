@@ -461,24 +461,124 @@
 // Using Interface with Classes
 
 
+// class add{
+//     total(a,b){
+//         console.log(a+b)
+//     }
+// }
+// let get=new add()
+// get.total(2,
 
 
-
-
-
-
+// class printit{
+//     get()
+//     {
+//         console.log("My name is Sumit Sharma..")
+//     }
+// }
+// let a2=new printit()
+// a2.get()
 
             
-            
+// class say{
+//     name:"ankit";
+//     get()
+//     {
+//         return this.name
+//     }
+// } 
+// let b=new say()
+// b.get()
 
 
+// let say=()=>{
+// return "my name is......."
+// }
+// console.log(say())
+
+// interface bee{
+//     name:string,
+//     id:number,
+//     status:boolean,
+//     getname:()=>string
+// }
+// let say:bee={
+//     name:"ankit",
+//     id:22,
+//     status:true,
+//     getname:function (){return "hello function"}
+// }
+// console.log(say.getname())
                                                     
+
+
+// function give(a){
+//     return a
+// }
+// console.log(give(22))
             
-            
+
+// function say(data){
+//     return data
+// }
+// console.log(say({name:"sumit",id:22}))
+
+// class department{
+//     name:string;
+//     constructor(n){
+//         this.name=n
+//     }
+// }
+// let a=new department("accounts...")
+// console.log(a)
+
+// let say="hello"
+// console.log(say.length)
+
+
+// let names=(first,last)=>{
+// console.log(last)
+// }
+// names("sumit","sharma")
 
 
 
 
+// class student{
+//     name:string
+//     age:number
+//     id:number
+//     constructor(n,age1,id1){
+//          this.name=n;
+//         this.age=age1;
+//         this.id=id1
+//     }
+
+// biodata(){
+        
+//     console.log(`My name is ${this.name},My age is ${this.age},My id is ${this.id}...`)
+
+// }
+// }
+// let obj=new student('vinod',22,3442)
+// obj.biodata()
+
+
+
+
+class student{
+   
+    constructor( private name,private age,private id){
+         this.name;
+        this.age;
+        this.id
+    }
+biodata(){
+    console.log(`My name is ${this.name},My age is ${this.age},My id is ${this.id}...`)
+}
+}
+let obj=new student('vinod',22,3442)
+obj.biodata()
 
 
 
