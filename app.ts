@@ -542,7 +542,7 @@
 // names("sumit","sharma")
 
 
-
+// 
 
 // class student{
 //     name:string
@@ -553,32 +553,66 @@
 //         this.age=age1;
 //         this.id=id1
 //     }
+// // biodata(){   
+// //     console.log(`My name is ${this.name},My age is ${this.age},My id is ${this.id}...`)
+// // }
+// }
+// let obj=new student('vinod',22,3442)
+// console.log(obj)
+// obj.biodata()
 
+
+// 
+
+
+// class student{
+//     constructor( private name,private age,private id){
+//          this.name;
+//         this.age;
+//         this.id
+//     }
 // biodata(){
-        
 //     console.log(`My name is ${this.name},My age is ${this.age},My id is ${this.id}...`)
-
 // }
 // }
 // let obj=new student('vinod',22,3442)
 // obj.biodata()
 
+// 
+
+// class say{
+//     printit(){
+//         console.log("My name is vinod, my age is 22.")
+//     }
+// }
+// let a1=new say()
+// a1.printit()
+
+// 
+
+// class say{
+//     name="sumit";
+//     constructor(){
+//         // console.log("My name is vinod, my age is 22.")
+//          this.name;
+//     }
+// }
+// let p=new say()
+// console.log(p)
 
 
 
-class student{
-   
-    constructor( private name,private age,private id){
-         this.name;
-        this.age;
-        this.id
+// Namespace---------------------------------- 
+
+
+namespace userslist{
+    export class users{
+        getname(){
+            return "hello namespace"
+        }
     }
-biodata(){
-    console.log(`My name is ${this.name},My age is ${this.age},My id is ${this.id}...`)
 }
-}
-let obj=new student('vinod',22,3442)
-obj.biodata()
-
+let a1=new userslist.users()
+console.log(a1.getname())
 
 
