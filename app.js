@@ -13,117 +13,42 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var parents = /** @class */ (function () {
-    function parents() {
-        this.name = "hello Inheritance";
+var Parent = /** @class */ (function () {
+    function Parent() {
     }
-    parents.prototype.setname = function () {
-        this.name;
+    Parent.prototype.setName = function (name) {
+        this.name = name;
     };
-    return parents;
+    return Parent;
 }());
 var child = /** @class */ (function (_super) {
     __extends(child, _super);
     function child() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    child.prototype.getname = function () {
+    child.prototype.getName = function () {
         return this.name;
     };
     return child;
-}(parents));
-var a1 = new child();
-a1.setname();
-console.log(a1.getname());
-var add = /** @class */ (function () {
-    function add() {
-    }
-    add.prototype.total = function (a, b) {
-        console.log(a + b);
-    };
-    return add;
-}());
-var get = new add();
-get.total(2, 2);
-var printit = /** @class */ (function () {
-    function printit() {
-    }
-    printit.prototype.get = function () {
-        console.log("My name is Sumit Sharma..");
-    };
-    return printit;
-}());
-var a2 = new printit();
-a2.get();
-var sasy = /** @class */ (function () {
-    function sasy() {
-    }
-    sasy.prototype.get = function () {
-        return this.name;
-    };
-    return sasy;
-}());
-var b = new sasy();
-b.get();
-var sy = function () {
-    return "my name is.......";
-};
-console.log(sy());
-var sa = {
-    name: "ankit",
-    id: 22,
-    status: true,
-    getname: function () { return "hello function"; }
-};
-console.log(sa.getname());
-function give(a) {
-    return a;
+}(Parent));
+var c1 = new child();
+c1.setName("bruce");
+console.log(c1.getName());
+var Days;
+(function (Days) {
+    Days[Days["mon"] = 10] = "mon";
+    Days[Days["tue"] = 11] = "tue";
+    Days[Days["wed"] = 12] = "wed";
+    Days[Days["thur"] = 13] = "thur";
+})(Days || (Days = {}));
+function whichDay(day) {
+    return day;
 }
-console.log(give(22));
-function y(data) {
+console.warn(whichDay(Days.wed));
+var s1 = Symbol();
+var s2 = Symbol();
+console.log(s1 === s2);
+function users(data) {
     return data;
 }
-console.log(y({ name: "sumit", id: 22 }));
-var department = /** @class */ (function () {
-    function department(n) {
-        this.name = n;
-    }
-    return department;
-}());
-var a = new department("accounts...");
-console.log(a);
-var say = "hello";
-console.log(say.length);
-var names = function (first, last) {
-    console.log(last);
-};
-names("sumit", "sharma");
-var stud = /** @class */ (function () {
-    function stud(n, age1, id1) {
-        this.name = n;
-        this.age = age1;
-        this.id = id1;
-    }
-    stud.prototype.biodata = function () {
-        console.log("My name is " + this.name + ",My age is " + this.age + ",My id is " + this.id + "...");
-    };
-    return stud;
-}());
-var ob = new stud('vinod', 22, 3442);
-ob.biodata();
-var student = /** @class */ (function () {
-    function student(name, age, id) {
-        this.name = name;
-        this.age = age;
-        this.id = id;
-        this.name;
-        this.age;
-        this.id;
-    }
-    student.prototype.biodata = function () {
-        console.log("My name is " + this.name + ",My age is " + this.age + ",My id is " + this.id + "...");
-    };
-    return student;
-}());
-var obj = new student('vinod', 22, 3442);
-obj.biodata();
+console.log(users({ name: "anil", age: '30' }));
