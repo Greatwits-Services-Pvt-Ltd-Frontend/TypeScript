@@ -1,54 +1,51 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 exports.__esModule = true;
-var Parent = /** @class */ (function () {
-    function Parent() {
+var b = "hello";
+console.log(b);
+var App = /** @class */ (function () {
+    function App() {
     }
-    Parent.prototype.setName = function (name) {
-        this.name = name;
+    App.prototype.test = function () {
+        console.log("test method is created");
     };
-    return Parent;
+    return App;
 }());
-var child = /** @class */ (function (_super) {
-    __extends(child, _super);
-    function child() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var a1 = new App();
+a1.test();
+var a = 5.7;
+console.log(a);
+var b1 = '10';
+console.log(b1);
+var c = true;
+console.log(c);
+var datas = ['anky', 'summit', 5];
+datas.push(10);
+console.log(datas);
+var value = ['anky', 'summit', 7];
+value.push(5);
+console.log(value);
+var da = ['anky', 'summit', 'piyush'];
+da[2] = 'anil';
+console.log(da);
+var ta = ['ankit', 'summit', 5];
+ta.push(true);
+console.log(ta);
+var user = {
+    name: 'ankit',
+    age: 25,
+    address: 'delhi'
+};
+user.name = "rahul";
+console.log(user);
+var data = "anil";
+data = true;
+data = 30;
+console.log(data);
+var users = {
+    name: "ankit",
+    age: 24,
+    getName: function () {
+        return "ankit gaur";
     }
-    child.prototype.getName = function () {
-        return this.name;
-    };
-    return child;
-}(Parent));
-var c1 = new child();
-c1.setName("bruce");
-console.log(c1.getName());
-var Days;
-(function (Days) {
-    Days[Days["mon"] = 10] = "mon";
-    Days[Days["tue"] = 11] = "tue";
-    Days[Days["wed"] = 12] = "wed";
-    Days[Days["thur"] = 13] = "thur";
-})(Days || (Days = {}));
-function whichDay(day) {
-    return day;
-}
-console.warn(whichDay(Days.wed));
-var s1 = Symbol();
-var s2 = Symbol();
-console.log(s1 === s2);
-function users(data) {
-    return data;
-}
-console.log(users({ name: "anil", age: '30' }));
+};
+console.log(users.getName());
