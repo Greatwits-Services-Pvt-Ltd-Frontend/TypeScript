@@ -1,0 +1,45 @@
+#gc-header {
+    background: #fff;
+    color: #000;
+    border-top: 1px solid #ddd;
+    font-family: montserratregular,Arial,Helvetica,sans-serif;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #e7e7e7;
+}
+body.fluid-width-enabled .headerContainer {
+    max-width: 1500px;
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px);
+    width: calc(100% - 40px);
+}
+#headerLogoWrap {
+    float: left;
+    background: #cd2418;
+    width: 100px;
+    height: 75px;
+    min-width: 100px;
+}
+body.fluid-width-enabled section#headerLogoWrap #brand {
+    float: none;
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+section#headerLogoWrap #brand .gl {
+    text-indent: -9999px;
+    width: 100px;
+    height: 75px;
+    display: block;
+    margin: 0 auto;
+}
+a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+.gl {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
