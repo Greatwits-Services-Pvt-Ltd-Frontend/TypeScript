@@ -63,31 +63,31 @@ export{}
 // }
 // console.log(users.getName());
 
-function cals():number{
-return 10+10;
-}
-console.log(cals())
+// function cals():number{
+// return 10+10;
+// }
+// console.log(cals())
 
-function cal(a):number{
-    return a;
-    }
-    console.log(cal(10))
+// function cal(a):number{
+//     return a;
+//     }
+//     console.log(cal(10))
     
     
-function ca(a:number):number{
-    return a;
-    }
-    console.log(ca(10))
+// function ca(a:number):number{
+//     return a;
+//     }
+//     console.log(ca(10))
  
-function cac(a:number,b:number):number{
-    return a+b;
-    }
-    console.log(cac(10,20))
+// function cac(a:number,b:number):number{
+//     return a+b;
+//     }
+//     console.log(cac(10,20))
 
-    function cacs(a:number,b?:number):number{
-        return b?a+b:a;
-        }
-        console.log(cacs(10))
+//     function cacs(a:number,b?:number):number{
+//         return b?a+b:a;
+//         }
+//         console.log(cacs(10))
     
     class App{
         name="ankit"
@@ -140,4 +140,37 @@ function cac(a:number,b:number):number{
             q1.setName("ankit");
             console.log(q1.getName())
 
+namespace UsersUtils{
+    export class Users{
+        getName(){
+            return "ankit"
+        }
+    }
+}
+let u1=new UsersUtils.Users();
+console.log(u1.getName());
 
+import slogin from './student'
+import tlogin from './teacher'
+let teacher=new tlogin();
+console.log(teacher.data)
+let student=new slogin();
+console.log(student.data)
+
+function users(data){
+    return data;
+}
+console.log(users({name:"ankit", age:'25'}))
+
+function user <T> (data:T):T{
+    return data;
+}
+console.log(user("anky"))
+
+enum Days{
+   mon,tue,wed,thur,fri,sat 
+}
+function whichDay(Days){
+    return Days
+}
+console.log(whichDay(Days.sat))
