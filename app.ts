@@ -89,76 +89,76 @@ export{}
 //         }
 //         console.log(cacs(10))
     
-    class App{
-        name="ankit"
-        constructor(){
-            console.log("constr called");
-        }
-        getName(){
-        console.log(this.name)
-        }
-        }
-        let a1=new App();
-        a1.getName();
+//     class App{
+//         name="ankit"
+//         constructor(){
+//             console.log("constr called");
+//         }
+//         getName(){
+//         console.log(this.name)
+//         }
+//         }
+//         let a1=new App();
+//         a1.getName();
     
-        class Apps{
-            names;
-            constructor(name){
-                this.names=name
-            }
-            getName(){
-            console.log(this.names)
-            }
-            }
-            let b1=new Apps("anky");
-            b1.getName();
+//         class Apps{
+//             names;
+//             constructor(name){
+//                 this.names=name
+//             }
+//             getName(){
+//             console.log(this.names)
+//             }
+//             }
+//             let b1=new Apps("anky");
+//             b1.getName();
 
-            class Ap{
-                names:string="anil";
-                constructor(name:string){
-                    this.names=name
-                }
-                getName():string{
-                return(this.names)
-                }
-                }
-                let c1=new Ap("sumit");
-                console.log(c1.getName());
+//             class Ap{
+//                 names:string="anil";
+//                 constructor(name:string){
+//                     this.names=name
+//                 }
+//                 getName():string{
+//                 return(this.names)
+//                 }
+//                 }
+//                 let c1=new Ap("sumit");
+//                 console.log(c1.getName());
 
-            class Parent{
-                names:string;
-                setName(name){
-                    this.names=name;
-                }
-            }
-            class child extends Parent{
-                getName():string{
-                    return this.names;
-                }
-            }
-            let q1=new child();
-            q1.setName("ankit");
-            console.log(q1.getName())
+//             class Parent{
+//                 names:string;
+//                 setName(name){
+//                     this.names=name;
+//                 }
+//             }
+//             class child extends Parent{
+//                 getName():string{
+//                     return this.names;
+//                 }
+//             }
+//             let q1=new child();
+//             q1.setName("ankit");
+//             console.log(q1.getName())
 
-namespace UsersUtils{
-    export class Users{
-        getName(){
-            return "ankit"
-        }
-    }
-}
-let u1=new UsersUtils.Users();
-console.log(u1.getName());
+// namespace UsersUtils{
+//     export class Users{
+//         getName(){
+//             return "ankit"
+//         }
+//     }
+// }
+// let u1=new UsersUtils.Users();
+// console.log(u1.getName());
 
-import slogin from './student'
-import tlogin from './teacher'
-let teacher=new tlogin();
-console.log(teacher.data)
-let student=new slogin();
-console.log(student.data)
+// import slogin from './student'
+// import tlogin from './teacher'
+// let teacher=new tlogin();
+// console.log(teacher.data)
+// let student=new slogin();
+// console.log(student.data)
 
-function users(data){
-    return data;
+function users(d){
+    return d;
 }
 console.log(users({name:"ankit", age:'25'}))
 
@@ -170,7 +170,44 @@ console.log(user("anky"))
 enum Days{
    mon,tue,wed,thur,fri,sat 
 }
-function whichDay(Days){
-    return Days
+function whichDay(day:Days){
+    return day
 }
 console.log(whichDay(Days.sat))
+
+let s1=Symbol();
+let s2=Symbol();
+// console.log(s1)
+console.log(s1===s2)
+
+let a1=Symbol("d1");
+let a2=Symbol("d2");
+console.log(a1);
+
+let j1=Symbol("d11");
+console.log(j1)
+let data={
+[j1] : "some data"
+}
+console.log (data[j1])
+
+let h1=Symbol("d12");
+class Demos{
+    demoF1(){
+return "some data"
+}
+}
+let d12=new Demos();
+console.log(d12.demoF1())
+
+
+let demoF11=Symbol("d13");
+class Demo{
+    [demoF11](){
+return "some data"
+}
+}
+let d13=new Demo();
+console.log(d13[demoF11]())
+
+
